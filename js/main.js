@@ -1,4 +1,7 @@
 // Make it rain!
+//horizontal scroll
+$.jInvertScroll(['main']);
+
 //sidebar button click
 $('.sideBarButton').on('click', function (e) {
   e.preventDefault();
@@ -13,4 +16,14 @@ $('.sideBarButton').on('click', function (e) {
   }
 });
 
-$.jInvertScroll(['.scrollContent']);
+//click picture
+$('.project').on('click', function(){
+	if ($(this).children('img').hasClass('imageLargeSize')){
+		$(this).children('img').removeClass('imageLargeSize').addClass('imageSmallSize');
+		$('main').css('width', '-=452px');
+	}
+	else{
+		$(this).children('img').removeClass('imageSmallSize').addClass('imageLargeSize');
+		$('main').css('width', '+=452px');
+	}
+});
