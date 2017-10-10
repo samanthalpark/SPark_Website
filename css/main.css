@@ -200,20 +200,6 @@ nav{
 .sideBarHighlight:hover{
 	color: white;
 	background-color: #5d3c44;
-	width: 100%
-}
-
-.sideBarHighlight:before{
-	position: absolute;
-	height: 100%;
-	width: 0px;
-	content: '';
-	background-color: #5d3c44;
-	transition: all 0.25s ease-in-out;
-}
-
-.sideBarHighLight:hover:before{
-	width: 100%;
 }
 
 
